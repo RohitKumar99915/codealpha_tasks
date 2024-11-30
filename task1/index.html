@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories Gallery</title>
+    <link rel="stylesheet" href="gallerycss.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Memories</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Galleries</a>
+            <a href="#">Features</a>
+            <a href="#">Style Guide</a>
+        </div>
+    </div>
+
+    <!-- Hero Text -->
+    <div class="hero-text">
+        Capture Your Beautiful Moments
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery">
+        <div class="gallery-item" onclick="openModal('modal1')">
+            <img src="https://th.bing.com/th/id/OIP.TnQ80xsp7AQCzjA3iJew8wHaDt?rs=1&pid=ImgDetMain" alt="Gallery Image 1">
+            <h3>Crown Plaza Tampa</h3>
+            <p>12 Photos</p>
+        </div>
+        <div class="gallery-item" onclick="openModal('modal2')">
+            <img src="https://cdn.stocksnap.io/img-thumbs/960w/child-toddler_D5VVUIQNDL.jpg" alt="Gallery Image 2">
+            <h3>Toddlers</h3>
+            <p>13 Photos</p>
+        </div>
+        <div class="gallery-item" onclick="openModal('modal3')">
+            <img src="https://i.pinimg.com/originals/c2/27/db/c227dba32b76a5c10d9cd77082ea7e89.jpg" alt="Gallery Image 3">
+            <h3>Young and Restless</h3>
+            <p>14 Photos</p>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Crown Plaza Tampa</h2>
+            <p>Experience luxury and comfort at Crown Plaza Tampa. Below are some memories captured during our stay.</p>
+            <div class="modal-gallery">
+                <img src="https://th.bing.com/th/id/OIP.8khg8h4mfDE7X2Y1l1PAxwAAAA?rs=1&pid=ImgDetMain" alt="Crown Plaza Image 1" class="modal-image">
+                <img src="https://th.bing.com/th/id/OIP.pMbbR4yghEce8r2rV5aIRQAAAA?rs=1&pid=ImgDetMain" alt="Crown Plaza Image 2" class="modal-image">
+            </div>
+            <div class="modal-navigation">
+                <button onclick="navigateImages('modal1', -1)">Previous</button>
+                <button onclick="navigateImages('modal1', 1)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Toddlers</h2>
+            <p>Precious moments with toddlers, filled with laughter and joy. Enjoy these lovely captures.</p>
+            <div class="modal-gallery">
+                <img src="https://th.bing.com/th/id/OIP.XbzuN7S5UX8Ov8La8I29nQAAAA?rs=1&pid=ImgDetMain" alt="Toddlers Image 1" class="modal-image">
+                <img src="https://th.bing.com/th/id/OIP.dlorL-r3bASnR370XHZ1ZgHaLL?rs=1&pid=ImgDetMain" alt="Toddlers Image 2" class="modal-image">
+                <img src="https://th.bing.com/th/id/OIP.dlorL-r3bASnR370XHZ1ZgHaLL?rs=1&pid=ImgDetMain" alt="Toddlers Image 3" class="modal-image">
+                <img src="https://th.bing.com/th/id/OIP.dlorL-r3bASnR370XHZ1ZgHaLL?rs=1&pid=ImgDetMain" alt="Toddlers Image 4" class="modal-image">
+            </div>
+            <div class="modal-navigation">
+                <button onclick="navigateImages('modal2', -1)">Previous</button>
+                <button onclick="navigateImages('modal2', 1)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Young and Restless</h2>
+            <p>Capturing the spirit of youth and adventure. Explore the vibrant moments of the young and restless.</p>
+            <div class="modal-gallery">
+                <img src="https://th.bing.com/th/id/OIP.ePjgbxrQeOXoqi0JsYgUcQHaLH?dpr=1.3&pid=ImgDetMain" alt="Young and Restless Image 1" class="modal-image">
+                <img src="https://th.bing.com/th/id/OIP.YI0TjcMS2Tb7xCDpz_jUNgHaKw?dpr=1.3&pid=ImgDetMain" alt="Young and Restless Image 2" class="modal-image">
+            </div>
+            <div class="modal-navigation">
+                <button onclick="navigateImages('modal3', -1)">Previous</button>
+                <button onclick="navigateImages('modal3', 1)">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Memories. All rights reserved. | Crafted with care to capture every precious moment.</p>
+    </div>
+
+    <script src="galleryjs.js"></script> <!-- Link to external JS file -->
+</body>
+</html>
