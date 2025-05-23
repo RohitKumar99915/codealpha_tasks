@@ -20,7 +20,7 @@ document.getElementById('aboutBtn').addEventListener('click', () => {
     const message = document.getElementById('message').value;
   
     // For now, just show an alert with feedback (this can be replaced with backend logic)
-    alert(Thank you for your feedback, ${name}! We'll reach out to you at ${email} if needed.);
+    alert("Thank you for your feedback,"+ name+"! We'll reach out to you at "+email+" if needed.");
     
     // Reset the form
     e.target.reset();
